@@ -1,35 +1,17 @@
-﻿<!DOCTYPE html>
-<html lang="ru">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>Primat</title>
+<title>Primat | Portfolio</title>
 <meta charset="utf-8">
 <link rel="stylesheet" href="css/style.css">
 <script src="js/jquery-1.7.1.min.js"></script>
 <script src="js/superfish.js"></script>
-<script src="js/jquery.easing.1.3.js"></script>
-<script src="js/jquery.cycle.all.min.js"></script>
-<script>
-$(function(){
-	$('.mp-slider').cycle({
-		pager: '#mp-pags',
-		timeout:7000,
-		pagerAnchorBuilder: pagerFactory
-		});
-	function pagerFactory(index, slide) {
-		var titles = []
-		titles[0] = $("#mp-pags-cont li:eq(0)").text()
-		titles[1] = $("#mp-pags-cont li:eq(1)").text()
-		titles[2] = $("#mp-pags-cont li:eq(2)").text()
-	return '<li><a href="#">'+(titles[index])+'</a></li>';
-	}; 
-})
-</script>
 <!--[if lt IE 9]>
 <script src="js/html5.js"></script>
 <link rel="stylesheet" href="css/ie.css"> 
 <![endif]-->
 </head>
-<body id="page1">
+<body>
 <!-- Header -->
 <header>
   <div class="inner">
@@ -37,149 +19,142 @@ $(function(){
   </div>
   <nav>
     <ul class="sf-menu">
-      <li class="current"><a href="index.html">Главная</a></li>
-      <li><a href="about.html">Про нас</a></li>
-      <li> <a href="services.html">Сервис</a>
+      <li class="current"><a  href="index.html">Home</a></li>
+    
+      <li> <a target="_blank" href="http://primat.org/news/">archive</a>
         <ul>
-          <li><a href="#">Пункт 1</a></li>
-          <li><a href="#">Пункт 2</a></li>
+          <li><a target="_blank" href="http://primat.org/publ/">For students</a></li>
+          <li><a target="_blank" href="http://primat.org/load/">Files</a></li>
         </ul>
       </li>
-      <li><a href="products.html">Софт</a></li>
-      <li><a href="contacts.html">Контакты</a></li>
+     <li><a target="_blank" href="http://primat.org/index/0-2">About</a></li>
+      <li><a target="_blank" href="http://primat.org/index/0-3">Contacts</a></li>
     </ul>
     <div class="clear"></div>
   </nav>
-  <div class="slider-container">
-    <div class="mp-slider">
-      <div><img src="images/slide-3.png" alt=""><a href="#">[...]</a></div>
-      <div><img src="images/slide-2.png" alt=""><a href="#">[...]</a></div>
-	  <div><img src="images/slide-1.png" alt=""><a href="#">[...]</a></div>
-    </div>
-  </div>
 </header>
 <!-- Content -->
 <section id="content">
   <div class="container_24">
     <div class="grid_24 content-border">
       <div class="top-content-box">
-        <ul id="mp-pags-cont">
-          <li><a href="#">пункт первый</a></li>
-          <li><a href="#">пункт второй</a></li>
-          <li><a href="#">пункт &amp; третий</a></li>
-        </ul>
-        <ul id="mp-pags">
+        <ul id="mp-pags-cont-extra">
+          <li><a href="http://primat.org/index/mathpad/0-152">MathPad online</a></li>
+		  <li><a  href="javascript://" onclick="window.open('http://primat.org/mathred/mathred.html','upp','scrollbars=1,top=0,left=0,resizable=1,width=920,height=535');return false;" title="Latex-Edit" "="">Math.LaTeX online</a></li>
+		  		  
+          <li><a target="_blank" href="http://primat.org/index/latex_editor/0-146">markdown &amp; latex</a></li>
+          <li ><a target="_blank" href="http://primat.org/index/kharakteristika/0-139">resume for students</a></li>
+		  <li ><a target="_blank" href="http://primat.org/index/konstruktor_programm_na_paskale/0-141">Pascal code edit</a></li>
+		  <li ><a target="_blank" rel="nofollow" href="https://github.com/primats">Primats Github</a></li>
+		  		  
         </ul>
       </div>
       <div class="top-row">
-        <h1 class="aligncenter">Наши эксперименты основаны на <br>
-          ваших идеях.</h1>
+        <h1 class="aligncenter">Our experiments are based <br>on your ideas.</h1>
         <div class="wrapper">
           <div class="grid_5 prefix_1 alpha">
             <div class="wrapper"> <span class="dropcap color-1">A.</span>
-              <div class="extra-wrap"> <strong class="str-1 color-1"> Vivamus hendrerit <br>
-                mauris ut dui gravida ut viverra lectus tincidunt cras mattis. </strong> <a href="#" class="link">read more</a> </div>
+              <div class="extra-wrap"> <strong class="str-1 color-1"> Pascal online <br>
+                web development environment for students. </strong> <a target="_blank" href="http://primat.org/index/0-128" class="link">see more</a> </div>
             </div>
           </div>
           <div class="grid_5"> <span class="dropcap color-2">B.</span>
-            <div class="extra-wrap"> <strong class="str-1 color-2"> Cras mattis tempor <br>
-              eros nec tristique sed sed felis arcu vel vehicula augue. </strong> <a href="#" class="link">read more</a> </div>
+            <div class="extra-wrap"> <strong class="str-1 color-2"> C++ shell <br>
+              online C++ compiler for students. </strong> <a target="_blank" href="http://primat.org/index/c_onlajn/0-143" class="link">see more</a> </div>
           </div>
           <div class="grid_5"> <span class="dropcap color-3">C.</span>
-            <div class="extra-wrap"> <strong class="str-1 color-3"> Sed sed felis arcu, vel vehicula maecenas faucibus sagittis cursus fusce tincidunt. </strong> <a href="#" class="link">read more</a> </div>
+            <div class="extra-wrap"> <strong class="str-1 color-3"> Web-solver: <br>online service for students and teachers. </strong> <a target="_blank" href="http://primat.org/news/reshatel/1-0-18" class="link">read more</a> </div>
           </div>
           <div class="grid_7 suffix_1 omega"> <span class="dropcap color-4">D.</span>
-            <div class="extra-wrap"> <strong class="str-1 color-4"> Cras mattis tempor eros nec tristique. Sed sed felis arcu, vel vehicula augue. Maecenas faucibus cursus. Fusce tincidunt tellus eget tristique. cursus. </strong> <a href="#" class="link">read more</a> </div>
+            <div class="extra-wrap"> <strong class="str-1 color-4"> Online creation <br>of charts and graphs for students and<br> teachers.</strong> <a target="_blank"  href="http://primat.org/index/diagrammy_i_grafiki_onlajn/0-140" class="link">see more</a> </div>
           </div>
         </div>
       </div>
       <div class="wrapper indent-top">
         <article class="grid_15 suffix_1 prefix_1 alpha">
-          <h2>Welcome to our company!</h2>
-          <p> Click here for more info about this free website templates created by TemplateMonster.com. This website template is optimized for 1280X1024 screen resolution. It is also XHTML &amp; CSS valid. Vivamus hendrerit mauris ut dui gravida ut viverra lectus tincidunt. Cras mattis tempor eros nec tristique. </p>
-          <div class="wrapper">
+          <h2>Our products:</h2>
+          <div class="p">
             <div class="grid_5 alpha">
-              <figure class="img-indent-bot"> <img src="images/page1-img1.jpg" alt=""> </figure>
-              <div class="alignright author"> Sara Green <em>manager</em> </div>
+              <figure class="img-indent-bot-1"> <img src="images/page4-img1.jpg" alt=""> </figure>
+              <strong class="str-2 color-1">MathPad button</strong>
+              <p>Chrome browser extension for mathematical notebooks.</p>
+              <div class="alignright"> <a target="_blank" rel="nofollow" href="https://chrome.google.com/webstore/detail/mathpad/dolefpliebpbbkmjcmjmneohhapodbfo?hl=ru&gl=UA" class="link">read more</a> </div>
             </div>
             <div class="grid_5">
-              <figure class="img-indent-bot"> <img src="images/page1-img2.jpg" alt=""> </figure>
-              <div class="alignright author"> Thom Smith <em>marketolog</em> </div>
+              <figure class="img-indent-bot-1"> <img src="images/page4-img2.jpg" alt=""> </figure>
+              <strong class="str-2 color-2"> MathForum </strong>
+              <p> Mathematicians and programmers forum for students.</p>
+              <div class="alignright"> <a target="_blank" href="http://primat.org/forum/" class="link">read more</a> </div>
             </div>
             <div class="grid_5 omega">
-              <figure class="img-indent-bot"> <img src="images/page1-img3.jpg" alt=""> </figure>
-              <div class="alignright author"> April Black <em>manager</em> </div>
+              <figure class="img-indent-bot-1"> <img src="images/page4-img3.jpg" alt=""> </figure>
+              <strong class="str-2 color-3"> Flowcharts </strong>
+              <p> Designer flowcharts for students and teachers. </p>
+              <div class="alignright"> <a target="_blank" href="http://primat.org/index/redaktor_blok_skhem/0-130" class="link">read more</a> </div>
             </div>
+            <div class="clear"></div>
+          </div>
+          <div class="hr-border-2"></div>
+          <div class="p">
+            <div class="grid_5 alpha">
+              <figure class="img-indent-bot-1"> <img src="images/page4-img4.jpg" alt=""> </figure>
+              <strong class="str-2 color-1"> SVG-editor </strong>
+              <p>On-line editor for vector graphics for student and and teachers.</p>
+              <div class="alignright"> <a target="_blank" href="http://primat.org/svgeditor/index.html" class="link">read more</a> </div>
+            </div>
+            <div class="grid_5">
+              <figure class="img-indent-bot-1"> <img src="images/page4-img5.jpg" alt=""> </figure>
+              <strong class="str-2 color-2">Wolframe|alpha</strong>
+              <p>Online widgets for solving problems in mathematics.</p>
+              <div class="alignright"> <a  target="_blank" rel="nofollow" href="http://www.wolframalpha.com/widgets/gallery/?query=primat.org" class="link">read more</a> </div>
+            </div>
+            <div class="grid_5 omega">
+              <figure class="img-indent-bot-1"> <img src="images/page4-img6.jpg" alt=""> </figure>
+              <strong class="str-2 color-3"> for mobile </strong>
+              <p> Read primat.org on Android, IPad, IPhone, tablets.</p>
+              <div class="alignright"> 			  
+			 <a target="_blank" rel="nofollow" class="link" title="Загрузить приложение primat.org" href="javascript://" rel="nofollow" onclick="window.open('http://www.google.com/newsstand/s/editions/CAowzNyhCQ/PRIMAT.ORG','upp','scrollbars=1,top=0,left=0,resizable=1,width=680,height=500');return false;" style="text-decoration:none;">read more</a>
+			  
+			  </div>
+			  
+			  
+            </div>
+            <div class="clear"></div>
           </div>
         </article>
-        <article class="grid_6 suffix_1 omega">
-          <h2>Latest news:</h2>
-          <dl class="news-list">
-            <dt> <a href="#">Nov. <strong>25</strong>, 2012</a></dt>
-            <dd> The PSD source files of this Point template are available for free for the registered members of TemplateMonster.com. Feel free to get them! </dd>
-            <dt> <a href="#">Nov. <strong>20</strong>, 2012</a> </dt>
-            <dd class="last"> This website template has several pages: Home, About, Services, Products, Contacts (note that contact us form - doesn't work) </dd>
-          </dl>
-          <div class="alignright"> <a href="#" class="link">read more</a> </div>
+        <article class="grid_6 omega">
+          <h2>Featured:</h2>
+          <ul class="list-2">
+            <li> <a  target="_blank" rel="nofollow" href="https://vk.com/primat.club">Our group</a>
+              <p class="p0">Join our group on the social network.</p>
+            </li>
+            <li> <a target="_blank" rel="nofollow" href="https://www.youtube.com/playlist?list=PLx6cnCGlwlhO_7JoV19ucOurwnhjjeauh">Primat-TV</a>
+              <p class="p0">See our video channel on YouTube.</p>
+            </li>
+            <li> <a target="_blank" href="http://primat.org/index/informery_dlja_matematikov_i_programmistov/0-57">Install widget</a>
+              <p class="p0">Install to your website informer New Content.</p>
+            </li>
+            <li> <a target="_blank"  href="http://primat.org/photo/reshebnik/14">Add the task</a>
+              <p class="p0">If you can not solve the problem, take a photo and send it to our website.</p>
+            </li>
+          </ul>
+          <p class="pad-5"> Applied mathematics is a branch of mathematics that deals with mathematical methods that find use in science, engineering, business, computer science, and industry. Thus, applied mathematics is a combination of mathematical science and specialized knowledge. </p>
+          <strong class="str-3 pad-5">The term "applied mathematics" also describes the professional specialty in which mathematicians work on practical problems by formulating and studying mathematical models. </strong>
+          <div class="alignright"> <a target="_blank" rel="nofollow" href="https://en.wikipedia.org/wiki/Applied_mathematics" class="link">read more</a> </div>
         </article>
       </div>
     </div>
     <div class="clear"></div>
   </div>
 </section>
-<aside>
-  <div class="container_24">
-    <div class="wrapper">
-      <div class="grid_24 aside-bg">
-        <div class="wrapper">
-          <article class="grid_5 prefix_1 alpha">
-            <h4>Services:</h4>
-            <ul class="list-1">
-              <li><a href="#">Vivamus hendrerit mauris</a></li>
-              <li><a href="#">ut dui gravida ut viverra</a></li>
-              <li><a href="#">lectus tincidunt Cras</a></li>
-              <li><a href="#">mattis tempor eros nec</a></li>
-            </ul>
-          </article>
-          <article class="grid_5">
-            <h4>Solutions:</h4>
-            <ul class="list-1">
-              <li><a href="#">lectus tincidunt Cras</a></li>
-              <li><a href="#">mattis tempor eros nec</a></li>
-              <li><a href="#">tristique Sed sed felis</a></li>
-              <li><a href="#">arcu vel vehicula augue</a></li>
-            </ul>
-          </article>
-          <article class="grid_5">
-            <h4>Programs:</h4>
-            <ul class="list-1">
-              <li><a href="#">mattis tempor eros nec</a></li>
-              <li><a href="#">tristique Sed sed felis</a></li>
-              <li><a href="#">arcu vel vehicula augue</a></li>
-              <li><a href="#">Maecenas faucibus </a></li>
-            </ul>
-          </article>
-          <article class="grid_8 omega">
-            <h4 class="pad-1">Testimonials:</h4>
-            <blockquote class="quote">
-              <div class="inner"> Vivamus hendrerit mauris ut dui gravida ut viverra lectus tincidunt. Cras mattis tempor eros nec tristique. Sed sed felis arcu, vel vehicula augue. </div>
-            </blockquote>
-            <div class="author alignright pad-2"> April Black <span>( manager )</span> </div>
-          </article>
-        </div>
-      </div>
-    </div>
-  </div>
-</aside>
 <!-- Footer -->
 <footer>
-  <div class="copyright"> &copy; 2012 <strong class="footer-logo">Primat</strong>
-    <div>Website Template designed by <a target="_blank" href="http://www.templatemonster.com/">TemplateMonster.com</a></div>
+  <div class="copyright"> &copy; 2015 | Primat.org 
   </div>
   <ul class="social-list">
-    <li><a href="#"><img src="images/social-link-1.jpg" alt=""></a></li>
-    <li><a href="#"><img src="images/social-link-2.jpg" alt=""></a></li>
-    <li><a href="#"><img src="images/social-link-3.jpg" alt=""></a></li>
+    <li><a target="_blank" rel="nofollow" href="https://www.facebook.com/primat.club/"><img src="images/social-link-1.jpg" alt=""></a></li>
+    <li><a target="_blank" rel="nofollow" href="https://twitter.com/primat_org"><img src="images/social-link-2.jpg" alt=""></a></li>
+    <li><a target="_blank" rel="nofollow" href="https://vk.com/primat.club"><img src="images/vk-16.jpg" alt=""></a></li>
   </ul>
 </footer>
 </body>

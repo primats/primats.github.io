@@ -422,6 +422,21 @@ header .inner {
 #mp-pags li:first-child+li, #mp-pags-cont-extra li:first-child+li {
 	background-color:#e87f2c;
 }
+
+#mp-pags li:first-child+li+li, #mp-pags-cont-extra li:first-child+li+li {
+	background-color:blue;
+}
+
+#mp-pags li:first-child+li+li+li, #mp-pags-cont-extra li:first-child+li+li+li {
+	background-color:green;
+}
+
+#mp-pags li:first-child+li+li+li+li, #mp-pags-cont-extra li:first-child+li+li+li+li {
+	background-color:#0094FF;
+}
+
+
+
 #mp-pags li a, #mp-pags-cont-extra li a {
 	display:block;
 	font-size:18px;
